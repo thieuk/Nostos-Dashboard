@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #01001D;
+}
+
+.fc {
+    min-height: 95vh;
+}
+
+.fc-daygrid-event {
+    background-color: #0B6134 !important; 
+    color: #fff !important;
+    padding: 2px !important;
+    border: 1px solid white !important;
+}
+
+.fc-timegrid-slot {
+    border-color: #ffffff35 !important;
+}
+
+.fc-day-today {
+    background-color: #ffffff35 !important;
+}
+
+.fc-button {
+    text-transform: uppercase !important;
+    border: 1px solid white !important;
+}
+
+.fc-saveBttn-button, .fc-logOutBttn-button {
+    border: 1px solid white !important;
+    font-weight: bold !important;
+}
+
+.fc-saveBttn-button {
+    background-color: #007A33 !important;
+}
+
+.fc-logOutBttn-button {
+    background-color: #7e22ce !important;
+}
+
+@media only screen and (max-width: 980px) {
+    .fc-toolbar, .fc-col-header-cell, .fc-timegrid-slot-label, .fc-daygrid-day-number {
+        font-size: 12px;
+    }
+
+    .fc-event {
+        font-size: 9px;
+    }
+
+    .close-bttn {
+        top: -5px;
+        right: -5px;
+        scale: 70%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .fc-toolbar, .fc-col-header-cell, .fc-timegrid-slot-label, .fc-daygrid-day-number {
+        font-size: 9px;
+    }
+
+    .fc-event {
+        font-size: 7px;
+    }
+
+    .close-bttn {
+        top: -7px;
+        right: -7px;
+        scale: 50%;
+    }
+}
